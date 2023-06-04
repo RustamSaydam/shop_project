@@ -4,7 +4,7 @@
     <title>SELLBUY</title>
 </head>
 <body>
-<h1>SELLBUY <a href="/login">Sing in</a></h1><hr>
+<h1>SELLBUY <a href="/login">Sign in</a></h1><hr>
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="${_csrf.token}">
     <input type="submit" value="Log out"/>
@@ -32,7 +32,7 @@
     First image: <input type="file", name="file1"/><br><br>
     Second image: <input type="file", name="file2"/><br><br>
     Third image: <input type="file", name="file3"/><br><br>
-
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
     <input type="submit" value="Add item"/>
 </form>
 </body>
