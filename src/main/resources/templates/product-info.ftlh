@@ -13,11 +13,12 @@
 <b>Description: </b>${product.description}<br>
 <b>Price: </b>${product.price}<br>
 <b>City: </b>${product.city}<br>
-<b>Author: </b>${product.author}<br>
-<hr>
+<b>Author: </b>${product.user.name}<br>
+<b>Phone number: </b>${product.user.phoneNumber}<br>
 <form action="/product/delete/${product.id}" method="post">
+    <hr>
     <input type="hidden" name="_csrf" value="${_csrf.token}">
-    <input type="submit" value="Delete item"/>
+    <input type="submit" value="Delete Item"/>
 </form>
 </body>
 </html>
